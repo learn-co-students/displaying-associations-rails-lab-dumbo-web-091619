@@ -1,0 +1,5 @@
+<ul>
+  <% @artists.map do |artist| %>
+  <li><%= link_to artist.name, artist %>, <%= artist.songs.size %> songs</li>
+  <% end %>
+</ul>
