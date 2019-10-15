@@ -1,0 +1,2 @@
+<%= content_tag :h1, @song.title %>
+<%=  link_to @song.artist.name + " " +  @song.artist.songs.count.to_s, @song.artist %>

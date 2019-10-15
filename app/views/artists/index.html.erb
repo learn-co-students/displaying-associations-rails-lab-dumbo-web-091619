@@ -1,0 +1,5 @@
+<%= content_tag :ul do %>
+  <% @artists.each do |artist| %>
+    <%= content_tag :li, (artist.name + " " + artist.songs.count.to_s + " songs" )  %>
+  <% end %>
+<% end %>
